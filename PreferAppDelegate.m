@@ -10,8 +10,6 @@
 
 @implementation PreferAppDelegate
 
-@synthesize window;
-
 - (BOOL)application:(NSApplication *)theApplication openFile:(NSString *)filename {
 	NSString *domainName = [[[filename lastPathComponent] stringByDeletingPathExtension] stringByDeletingPathExtension];
 	
@@ -23,11 +21,16 @@
 		[values addEntriesFromDictionary: [NSDictionary dictionaryWithContentsOfFile: filename]];
 		[defaults setPersistentDomain: values forName: domainName];		
 		[defaults synchronize];
-		[theApplication terminate: nil];
 	} else {
-		// TODO -- put up a warning
-		
+		NSAlert *alert = [[NSAlert alloc] init];
+		[alert addButtonWithTitle:@"OK"];
+		[alert setMessageText:@"Can't determine what domain to set"];
+		[alert setInformativeText:@"Can't determin what domain to set."];
+		[alert setAlertStyle:NSWarningAlertStyle];
+		[alert runModal];
+		[alert release];	
 	}
+	[theApplication terminate: nil];
 	return YES;
 }
 
