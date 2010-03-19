@@ -1,6 +1,6 @@
 # Prefer 
 
-Prefer is a droplet-esque OS X app that does one thing; write preferences. Essentially, Prefer lets you use .plist files the same way .reg files are used in Windows. You build a .plist file that contains the preferences you want to set, and Prefer will set them for you when it opens the file
+Prefer is a droplet-esque OS X app that does one thing and does it simply: write preferences. Essentially, Prefer lets you use .plist files the same way .reg files are used in Windows. You build a .plist file that contains the preferences you want to set, and Prefer will set them for you when it opens the file. You can build such plist files using OS X's built in `defaults` command line tool; documentation for this is forthcoming.
 
 ## Merging vs. replacing
 
