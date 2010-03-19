@@ -7,21 +7,15 @@
 //
 
 #import "PreferAppDelegate.h"
+#import "Preferences.h"
 
 @implementation PreferAppDelegate
 
 - (BOOL)application:(NSApplication *)theApplication openFile:(NSString *)filename {
-	NSString *domainName = [[[filename lastPathComponent] stringByDeletingPathExtension] stringByDeletingPathExtension];
-	
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
-	if ([[defaults persistentDomainNames] containsObject: domainName]) {
-		// Read in the existing prefs so we don't clobber them
-		NSMutableDictionary *values = [[defaults persistentDomainForName: domainName] mutableCopy];
-		[values addEntriesFromDictionary: [NSDictionary dictionaryWithContentsOfFile: filename]];
-		[defaults setPersistentDomain: values forName: domainName];		
-		[defaults synchronize];
-		[values release];
+	NSLog(@"%@", preference);
+	if ([preference isValidDomain]) {
+		[preference apply];
 	} else {
 		NSAlert *alert = [[NSAlert alloc] init];
 		[alert addButtonWithTitle:@"OK"];
