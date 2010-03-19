@@ -10,10 +10,11 @@
 #import "Preferences.h"
 
 @implementation PreferAppDelegate
+@synthesize window;
 
 - (BOOL)application:(NSApplication *)theApplication openFile:(NSString *)filename {
 
-	NSLog(@"%@", preference);
+	Preferences *preference = [[Preferences alloc] initWithContentsOfFile: filename];
 	if ([preference isValidDomain]) {
 		[preference apply];
 	} else {
