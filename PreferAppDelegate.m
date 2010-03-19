@@ -21,6 +21,7 @@
 		[values addEntriesFromDictionary: [NSDictionary dictionaryWithContentsOfFile: filename]];
 		[defaults setPersistentDomain: values forName: domainName];		
 		[defaults synchronize];
+		[values release];
 	} else {
 		NSAlert *alert = [[NSAlert alloc] init];
 		[alert addButtonWithTitle:@"OK"];
