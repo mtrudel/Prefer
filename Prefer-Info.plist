@@ -16,6 +16,8 @@
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>
+			<key>UTTypeIconFile</key>
+			<string>PrefFileIcon</string>
 			<key>UTTypeDescription</key>
 			<string>Preferences File</string>
 			<key>UTTypeConformsTo</key>
