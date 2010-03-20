@@ -32,6 +32,8 @@
 		4043F26F1153E1F300FDF095 /* Domain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		4043F2701153E1F300FDF095 /* Domain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Domain.m; sourceTree = "<group>"; };
 		4043F2D911541E7500FDF095 /* Drag Indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Drag Indicator.png"; sourceTree = "<group>"; };
+		40A8CB4E115592A5005FD800 /* Drag Indicator.graffle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Drag Indicator.graffle"; sourceTree = "<group>"; };
+		40A8CB4F115592A5005FD800 /* PrefFileIcon.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = PrefFileIcon.pxm; sourceTree = "<group>"; };
 		40B611411155827A00485E80 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
 		40B611421155827A00485E80 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
 		40B611751155910300485E80 /* PrefFileIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PrefFileIcon.icns; sourceTree = "<group>"; };
@@ -114,6 +116,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				40A8CB4E115592A5005FD800 /* Drag Indicator.graffle */,
+				40A8CB4F115592A5005FD800 /* PrefFileIcon.pxm */,
 				40B611751155910300485E80 /* PrefFileIcon.icns */,
 				4043F2D911541E7500FDF095 /* Drag Indicator.png */,
 				8D1107310486CEB800E47090 /* Prefer-Info.plist */,
