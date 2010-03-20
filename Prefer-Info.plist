@@ -5,52 +5,33 @@
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
-			<key>CFBundleTypeExtensions</key>
+			<key>LSItemContentTypes</key>
 			<array>
-				<string>plist</string>
-				<string>dict</string>
-				<string>*</string>
+				<string>com.consolidatedopcode.preferences</string>
 			</array>
-			<key>CFBundleTypeName</key>
-			<string>XMLPropertyList</string>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>LSIsAppleDefaultForType</key>
-			<true/>
-			<key>NSDocumentClass</key>
-			<string>PlistDocument</string>
+			<key>LSHandlerRank</key>
+			<string>Default</string>
 		</dict>
+	</array>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
 		<dict>
-			<key>CFBundleTypeExtensions</key>
+			<key>UTTypeDescription</key>
+			<string>Preferences File</string>
+			<key>UTTypeConformsTo</key>
 			<array>
-				<string>plist</string>
-				<string>dict</string>
-				<string>*</string>
+				<string>com.apple.property-list</string>
 			</array>
-			<key>CFBundleTypeName</key>
-			<string>BinaryPropertyList</string>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>LSIsAppleDefaultForType</key>
-			<true/>
-			<key>NSDocumentClass</key>
-			<string>PlistDocument</string>
-		</dict>
-		<dict>
-			<key>CFBundleTypeExtensions</key>
-			<array>
-				<string>plist</string>
-				<string>dict</string>
-				<string>*</string>
-			</array>
-			<key>CFBundleTypeName</key>
-			<string>ASCIIPropertyList</string>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>LSIsAppleDefaultForType</key>
-			<true/>
-			<key>NSDocumentClass</key>
-			<string>PlistDocument</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.consolidatedopcode.preferences</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>preference</string>
+					<string>preferences</string>
+				</array>
+			</dict>
 		</dict>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>

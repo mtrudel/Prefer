@@ -1,15 +1,15 @@
 //
-//  Preferences.m
+//  Domain.m
 //  Prefer
 //
 //  Created by Mat Trudel on 10-03-19.
 //  Copyright 2010 University Health Network. All rights reserved.
 //
 
-#import "Preferences.h"
+#import "Domain.h"
 
 
-@implementation Preferences
+@implementation Domain
 @synthesize domain;
 @synthesize preferences;
 
@@ -17,7 +17,7 @@
 	if (self = [super init]) {
 		NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile: file];
 		if ([dictionary count] != 1) {
-			[NSException raise: @"NonUnaryPreferenceFile" format: @"Can't init a Preference from a preference file with multiple bundles"];
+			[NSException raise: @"NonUnaryPreferenceFileException" format: @"Can't init a Preference from a preference file with multiple bundles"];
 		}
 		self.domain = [[dictionary allKeys] lastObject];
 		self.preferences = [dictionary valueForKey: self.domain];

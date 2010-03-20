@@ -1,5 +1,5 @@
 //
-//  Preferences.h
+//  Domain.h
 //  Prefer
 //
 //  Created by Mat Trudel on 10-03-19.
@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface Preferences : NSObject {
+@interface Domain : NSObject {
 	NSString *domain;
 	NSDictionary *preferences;
 }

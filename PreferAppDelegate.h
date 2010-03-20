@@ -9,9 +9,10 @@
 #import <Cocoa/Cocoa.h>
 
 @interface PreferAppDelegate : NSObject <NSApplicationDelegate> {
-    NSWindow *window;
+	NSWindow *window;
+	NSView *view;	
 }
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (assign) IBOutlet NSView *view;
 @end

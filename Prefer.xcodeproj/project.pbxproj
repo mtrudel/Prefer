@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* PreferAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* PreferAppDelegate.m */; };
-		4043F2711153E1F300FDF095 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4043F2701153E1F300FDF095 /* Preferences.m */; };
+		4043F2711153E1F300FDF095 /* Domain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4043F2701153E1F300FDF095 /* Domain.m */; };
+		4043F2DA11541E7500FDF095 /* Drag Indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4043F2D911541E7500FDF095 /* Drag Indicator.png */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -26,8 +27,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		4043F26F1153E1F300FDF095 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
-		4043F2701153E1F300FDF095 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
+		4043F26F1153E1F300FDF095 /* Domain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		4043F2701153E1F300FDF095 /* Domain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Domain.m; sourceTree = "<group>"; };
+		4043F2D911541E7500FDF095 /* Drag Indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Drag Indicator.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Prefer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Prefer-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Prefer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prefer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -47,8 +49,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4043F26F1153E1F300FDF095 /* Preferences.h */,
-				4043F2701153E1F300FDF095 /* Preferences.m */,
+				4043F26F1153E1F300FDF095 /* Domain.h */,
+				4043F2701153E1F300FDF095 /* Domain.m */,
 				256AC3D80F4B6AC300CF3369 /* PreferAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* PreferAppDelegate.m */,
 			);
@@ -105,6 +107,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4043F2D911541E7500FDF095 /* Drag Indicator.png */,
 				8D1107310486CEB800E47090 /* Prefer-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -166,6 +169,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				4043F2DA11541E7500FDF095 /* Drag Indicator.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +182,7 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* PreferAppDelegate.m in Sources */,
-				4043F2711153E1F300FDF095 /* Preferences.m in Sources */,
+				4043F2711153E1F300FDF095 /* Domain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
