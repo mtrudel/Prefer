@@ -3,7 +3,7 @@
 //  Prefer
 //
 //  Created by Mat Trudel on 10-03-20.
-//  Copyright 2010 University Health Network. All rights reserved.
+//  Copyright 2010 Con-Op. All rights reserved.
 //
 
 #import "Preferences.h"

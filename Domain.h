@@ -3,7 +3,7 @@
 //  Prefer
 //
 //  Created by Mat Trudel on 10-03-19.
-//  Copyright 2010 University Health Network. All rights reserved.
+//  Copyright 2010 Con-Op. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
