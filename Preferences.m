@@ -28,4 +28,9 @@
 		[domain apply];
 	}
 }
+
+- (NSString *)description {
+	return [NSString stringWithFormat: @"Preferences:\n%@", self.domains];
+}
+
 @end
