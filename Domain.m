@@ -31,6 +31,9 @@
 
 	// Read in the existing prefs so we don't clobber them
 	NSMutableDictionary *values = [[defaults persistentDomainForName: self.domain] mutableCopy];
+	if (!values) {
+		values = [[NSMutableDictionary alloc] init];
+	}
 	[values addEntriesFromDictionary: self.preferences];
 	[defaults setPersistentDomain: values forName: self.domain];
 	[defaults synchronize];
