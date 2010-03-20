@@ -13,19 +13,15 @@
 @synthesize domain;
 @synthesize preferences;
 
-- (id)initWithContentsOfFile: (NSString *)file {
+- (id)initWithDomain: (NSString *)aDomain andPreferences: (NSDictionary *)aDictionary {
 	if (self = [super init]) {
-		NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile: file];
-		if ([dictionary count] != 1) {
-			[NSException raise: @"NonUnaryPreferenceFileException" format: @"Can't init a Preference from a preference file with multiple bundles"];
-		}
-		self.domain = [[dictionary allKeys] lastObject];
-		self.preferences = [dictionary valueForKey: self.domain];
+		self.domain = aDomain;
+		self.preferences = aDictionary;
 	}
 	return self;
 }
 
-- (BOOL)isValidDomain {
+- (BOOL)isValid {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	return [[defaults persistentDomainNames] containsObject: self.domain];
 }

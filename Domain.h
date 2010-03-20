@@ -16,9 +16,9 @@
 @property(nonatomic, retain) NSString *domain;
 @property(nonatomic, retain) NSDictionary *preferences;
 
-- (id)initWithContentsOfFile: (NSString *)file;
+- (id)initWithDomain: (NSString *)aDomain andPreferences: (NSDictionary *)aDictionary;
 
-- (BOOL)isValidDomain;
+- (BOOL)isValid;
 
 - (void)apply;
 @end
