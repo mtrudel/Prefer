@@ -13,6 +13,6 @@
 }
 @property(nonatomic,retain) NSMutableArray *domains;
 
-- (id)initWithContentsOfFile: (NSString *)file;
+- (id)initWithContentsOfURL: (NSURL *)url;
 - (void)apply;
 @end

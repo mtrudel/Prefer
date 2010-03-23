@@ -11,7 +11,8 @@
 		256AC3DA0F4B6AC300CF3369 /* PreferAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* PreferAppDelegate.m */; };
 		4043F2711153E1F300FDF095 /* Domain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4043F2701153E1F300FDF095 /* Domain.m */; };
 		4043F2DA11541E7500FDF095 /* Drag Indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4043F2D911541E7500FDF095 /* Drag Indicator.png */; };
-		40A8CB531156C222005FD800 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40A8CB521156C222005FD800 /* README.md */; };
+		40A8CB671157D15A005FD800 /* PreferenceDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8CB661157D15A005FD800 /* PreferenceDocumentController.m */; };
+		40A8CC0311586A92005FD800 /* PreferAppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 40A8CC0211586A92005FD800 /* PreferAppIcon.icns */; };
 		40B611431155827A00485E80 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B611421155827A00485E80 /* Preferences.m */; };
 		40B611761155910300485E80 /* PrefFileIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 40B611751155910300485E80 /* PrefFileIcon.icns */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -36,6 +37,10 @@
 		40A8CB4E115592A5005FD800 /* Drag Indicator.graffle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Drag Indicator.graffle"; sourceTree = "<group>"; };
 		40A8CB4F115592A5005FD800 /* PrefFileIcon.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = PrefFileIcon.pxm; sourceTree = "<group>"; };
 		40A8CB521156C222005FD800 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		40A8CB651157D15A005FD800 /* PreferenceDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceDocumentController.h; sourceTree = "<group>"; };
+		40A8CB661157D15A005FD800 /* PreferenceDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceDocumentController.m; sourceTree = "<group>"; };
+		40A8CC0211586A92005FD800 /* PreferAppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PreferAppIcon.icns; sourceTree = "<group>"; };
+		40A8CC0411586A9B005FD800 /* PreferAppIcon.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = PreferAppIcon.pxm; sourceTree = "<group>"; };
 		40B611411155827A00485E80 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
 		40B611421155827A00485E80 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
 		40B611751155910300485E80 /* PrefFileIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PrefFileIcon.icns; sourceTree = "<group>"; };
@@ -64,6 +69,8 @@
 				4043F2701153E1F300FDF095 /* Domain.m */,
 				256AC3D80F4B6AC300CF3369 /* PreferAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* PreferAppDelegate.m */,
+				40A8CB651157D15A005FD800 /* PreferenceDocumentController.h */,
+				40A8CB661157D15A005FD800 /* PreferenceDocumentController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -119,6 +126,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				40A8CC0411586A9B005FD800 /* PreferAppIcon.pxm */,
+				40A8CC0211586A92005FD800 /* PreferAppIcon.icns */,
 				40A8CB4E115592A5005FD800 /* Drag Indicator.graffle */,
 				40A8CB4F115592A5005FD800 /* PrefFileIcon.pxm */,
 				40B611751155910300485E80 /* PrefFileIcon.icns */,
@@ -186,7 +195,7 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				4043F2DA11541E7500FDF095 /* Drag Indicator.png in Resources */,
 				40B611761155910300485E80 /* PrefFileIcon.icns in Resources */,
-				40A8CB531156C222005FD800 /* README.md in Resources */,
+				40A8CC0311586A92005FD800 /* PreferAppIcon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +210,7 @@
 				256AC3DA0F4B6AC300CF3369 /* PreferAppDelegate.m in Sources */,
 				4043F2711153E1F300FDF095 /* Domain.m in Sources */,
 				40B611431155827A00485E80 /* Preferences.m in Sources */,
+				40A8CB671157D15A005FD800 /* PreferenceDocumentController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

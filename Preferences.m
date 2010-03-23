@@ -12,10 +12,10 @@
 @implementation Preferences
 @synthesize domains;
 
-- (id)initWithContentsOfFile: (NSString *)file {
+- (id)initWithContentsOfURL: (NSURL *)url {
 	if (self = [super init]) {
 		self.domains = [NSMutableArray array];
-		NSDictionary *fileContents = [NSDictionary dictionaryWithContentsOfFile: file];
+		NSDictionary *fileContents = [NSDictionary dictionaryWithContentsOfURL: url];
 		for (NSString *domain in fileContents) {
 			[domains addObject: [[Domain alloc] initWithDomain: domain andPreferences: [fileContents objectForKey: domain]]];
 		}
