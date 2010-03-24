@@ -12,11 +12,9 @@
 
 @interface PreferAppDelegate : NSObject <NSApplicationDelegate> {
 	NSWindow *window;
-	NSView *view;	
 	PreferenceDocumentController *documentController;
 }
 
 @property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSView *view;
 @property (assign) IBOutlet PreferenceDocumentController *documentController;
 @end
