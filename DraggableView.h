@@ -1,8 +1,8 @@
 //
-//  PreferAppDelegate.h
+//  DraggableView.h
 //  Prefer
 //
-//  Created by Mat Trudel on 10-03-18.
+//  Created by Mat Trudel on 10-03-23.
 //  Copyright 2010 Con-Op. All rights reserved.
 //
 
@@ -10,11 +10,9 @@
 
 @class PreferenceDocumentController;
 
-@interface PreferAppDelegate : NSObject <NSApplicationDelegate> {
-	NSWindow *window;
+@interface DraggableView : NSImageView {
 	PreferenceDocumentController *documentController;
 }
 
-@property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet PreferenceDocumentController *documentController;
 @end

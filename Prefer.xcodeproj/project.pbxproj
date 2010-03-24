@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* PreferAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* PreferAppDelegate.m */; };
+		4011DC311159A745001973E8 /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4011DC301159A745001973E8 /* DraggableView.m */; };
 		4043F2711153E1F300FDF095 /* Domain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4043F2701153E1F300FDF095 /* Domain.m */; };
 		4043F2DA11541E7500FDF095 /* Drag Indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4043F2D911541E7500FDF095 /* Drag Indicator.png */; };
 		40A8CB671157D15A005FD800 /* PreferenceDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8CB661157D15A005FD800 /* PreferenceDocumentController.m */; };
@@ -31,6 +32,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		4011DC2F1159A745001973E8 /* DraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
+		4011DC301159A745001973E8 /* DraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableView.m; sourceTree = "<group>"; };
 		4043F26F1153E1F300FDF095 /* Domain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		4043F2701153E1F300FDF095 /* Domain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Domain.m; sourceTree = "<group>"; };
 		4043F2D911541E7500FDF095 /* Drag Indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Drag Indicator.png"; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 				256AC3D90F4B6AC300CF3369 /* PreferAppDelegate.m */,
 				40A8CB651157D15A005FD800 /* PreferenceDocumentController.h */,
 				40A8CB661157D15A005FD800 /* PreferenceDocumentController.m */,
+				4011DC2F1159A745001973E8 /* DraggableView.h */,
+				4011DC301159A745001973E8 /* DraggableView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 				4043F2711153E1F300FDF095 /* Domain.m in Sources */,
 				40B611431155827A00485E80 /* Preferences.m in Sources */,
 				40A8CB671157D15A005FD800 /* PreferenceDocumentController.m in Sources */,
+				4011DC311159A745001973E8 /* DraggableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
