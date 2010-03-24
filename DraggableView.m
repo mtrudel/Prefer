@@ -14,11 +14,11 @@
 @synthesize documentController;
 
 - (id)initWithFrame:(NSRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-			[self registerForDraggedTypes: [NSArray arrayWithObjects: @"com.consolidatedopcode.preferences", nil]];	
-		}
-    return self;
+	self = [super initWithFrame:frame];
+	if (self) {
+		[self registerForDraggedTypes: [NSArray arrayWithObjects: @"com.consolidatedopcode.preferences", nil]];	
+	}
+	return self;
 }
 
 - (BOOL)performDragOperation:(id <NSDraggingInfo>)sender {
